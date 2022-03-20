@@ -1,0 +1,38 @@
+
+
+body {
+    background-color: $back-color;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title {
+    font-family: $headings-font;
+    text-transform: uppercase;
+    color: $font-color;
+    size: 32px;
+    text-align: center;
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    .item {
+        background-color: $white-color;
+        height: 90%;
+        width: 70%;
+        padding: 10px;
+        @include flex-center;
+        flex-direction: column;
+        .color-container{
+            height: 100%;
+            width: 100%;
+        }
+        .color-paragraph{
+            font-family: $base-font;
+            color: $font-color;
+        }
+    }
+}

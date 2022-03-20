@@ -1,0 +1,17 @@
+$colors: (
+ 1: #CF5656,
+ 2:#56CF87,
+ 3:#56ABCF,
+ 4:#5671CF,
+ 5:#B056CF,
+ 6:#CF9F56,
+ 7:#EEF223,
+ 8:#9D9C9C
+);
+
+
+@each $key, $value in $colors {
+    .color-container__#{$key}{
+        background-color: $value;
+    }
+}
